@@ -1,6 +1,6 @@
 class BootstrapUIGrailsPlugin {
     // the plugin version
-    def version = "0.1"
+    def version = "1.0-SNAPSHOT"
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.3.7 > *"
     // the other plugins this plugin depends on
@@ -20,6 +20,18 @@ Twitter Bootstrap based UI Set for plugin platform
 
     // URL to the plugin's documentation
     def documentation = "http://grails.org/plugin/bootstrap-ui"
+
+    def license = "APACHE"
+
+    def organization = [name: "Grailsrocks", url: "http://grailsrocks.com/"]
+
+    def developers = [
+            [name: "Marc Palmer", email: "marc@grailsrocks.com"]
+    ]
+
+    def issueManagement = [ system: "JIRA", url: "http://jira.grails.org/browse/GPBOOTSTRAPUI" ]
+
+    def scm = [url: "https://github.com/Grailsrocks/grails-bootstrap-ui"]
 
     def doWithWebDescriptor = { xml ->
         // TODO Implement additions to web.xml (optional), this event occurs before 
