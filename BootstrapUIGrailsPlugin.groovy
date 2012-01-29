@@ -1,4 +1,4 @@
-class BootstrapUIGrailsPlugin {
+class BootstrapUiGrailsPlugin {
     // the plugin version
     def version = "1.0-SNAPSHOT"
     // the version or versions of Grails the plugin is designed for
@@ -42,11 +42,11 @@ Twitter Bootstrap based UI Set for plugin platform
             ui.Bootstrap.button.cssClass = 'btn'
             ui.Bootstrap.tab.cssClass = 'tab-pane'
             ui.Bootstrap.field.cssClass = 'input'
-            ui.Bootstrap.error.cssClass = 'error'
+            ui.Bootstrap.invalid.cssClass = 'invalid'
             ui.Bootstrap.table.cssClass = 'zebra-striped'
-            ui.Bootstrap.tableRow.cssClass = ''
-            ui.Bootstrap.tableRowOdd.cssClass = ''
-            ui.Bootstrap.tableRowEven.cssClass = ''
+            ui.Bootstrap.tr.cssClass = ''
+            ui.Bootstrap.trOdd.cssClass = ''
+            ui.Bootstrap.trEven.cssClass = ''
         }
     }
     
