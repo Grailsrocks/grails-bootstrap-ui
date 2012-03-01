@@ -1,7 +1,9 @@
-<div class="pagination${uiArgs.classes}">
+<div class="pagination${classes}">
 <ul>
-    <li class="prev${uiArgs.prev.enabled ? '' : ' disabled'}"><a href="${uiArgs.prev.link ?: '#'}">${uiArgs.prev.text.encodeAsHTML()}</a></li>
-    <g:each in="${uiArgs.items}" var="i">
+    <g:if test="${prev}">
+        <li class="prev${prev.enabled ? '' : ' disabled'}"><a href="${prev.link ?: '#'}">${prev.text.encodeAsHTML()}</a></li>
+    </g:if>
+    <g:each in="${items}" var="i">
         <g:if test="${i.earlier}">
             <li><a href="${i.link ?: '#'}">&ellips;</a></li>
         </g:if>
@@ -16,6 +18,8 @@
         </g:else>
     </li>
     </g:each>
-    <li class="next${uiArgs.next.enabled ? '' : ' disabled'}"><a href="${uiArgs.next.link ?: '#'}">${uiArgs.next.text.encodeAsHTML()}</a></li>
+    <g:if test="${next}">
+        <li class="next${next.enabled ? '' : ' disabled'}"><a href="${next.link ?: '#'}">${next.text.encodeAsHTML()}</a></li>
+    </g:if>
 </ul>
 </div>

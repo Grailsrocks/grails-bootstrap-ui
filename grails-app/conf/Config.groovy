@@ -8,7 +8,7 @@ log4j = {
     //    console name:'stdout', layout:pattern(conversionPattern: '%c{2} %m%n')
     //}
     
-    debug "org.grails.plugin.platform", "org.grails.plugin.platform.ui"
+    debug "org.grails.plugin.platform", "org.grails.plugin.platform.ui", "grails.app"
 
     error  'org.codehaus.groovy.grails.web.servlet',  //  controllers
            'org.codehaus.groovy.grails.web.pages', //  GSP
@@ -24,3 +24,5 @@ log4j = {
 
     warn   'org.mortbay.log'
 }
+
+grails.validateable.packages = ['org.grails.plugin.platform.test']

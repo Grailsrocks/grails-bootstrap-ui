@@ -1,1 +1,1 @@
-${uiArgs.body}
+${bodyContent}

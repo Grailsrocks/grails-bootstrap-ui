@@ -1,1 +1,1 @@
-<span class="help-inline">${uiArgs.body}</span>
+<span class="help-inline">${bodyContent}</span>

@@ -1,6 +1,6 @@
-<ul class="tabs${uiArgs.classes}" ${ui.attributes()}>
-<g:each in="${uiArgs.tabs}" var="t">   <li${t == uiArgs.active ? ' class="active"' : ''}><a href="#${t.encodeAsHTML()}"><g:message code="${uiArgs.prefix ? uiArgs.prefix+'.'+t : t}" encodeAs="HTML"/></a></li>
+<ul class="tabs${classes}" ${ui.attributes()}>
+<g:each in="${tabs}" var="t">   <li${t.active ? ' class="active"' : ''}><a href="#${t.id.encodeAsHTML()}"><g:message code="${prefix ? prefix+'.'+t.title : t.title}" encodeAs="HTML"/></a></li>
 </g:each></ul>
 <div class="tab-content">
-    <g:each in="${uiArgs.tabBodies}" var="b">${b}</g:each>
+    <g:each in="${tabs}" var="t">${t.body}</g:each>
 </div>
