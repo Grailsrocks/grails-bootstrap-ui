@@ -26,3 +26,5 @@ log4j = {
 }
 
 grails.validateable.packages = ['org.grails.plugin.platform.test']
+grails.views.default.codec="none" // none, html, base64
+grails.views.gsp.encoding="UTF-8"
