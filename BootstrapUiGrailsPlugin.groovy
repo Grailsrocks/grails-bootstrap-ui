@@ -39,14 +39,19 @@ Twitter Bootstrap based UI Set for plugin platform
 
     def doWithConfig = { config ->
         platformUi {
+            ui.Bootstrap.actions.cssClass = 'form-actions'
             ui.Bootstrap.button.cssClass = 'btn'
             ui.Bootstrap.tab.cssClass = 'tab-pane'
+            ui.Bootstrap.tabs.cssClass = 'nav nav-tabs'
             ui.Bootstrap.field.cssClass = 'input'
             ui.Bootstrap.invalid.cssClass = 'invalid'
-            ui.Bootstrap.table.cssClass = 'zebra-striped'
+            ui.Bootstrap.table.cssClass = 'table table-striped'
             ui.Bootstrap.tr.cssClass = ''
             ui.Bootstrap.trOdd.cssClass = ''
             ui.Bootstrap.trEven.cssClass = ''
+            ui.Bootstrap.carousel.cssClass = 'carousel'
+            ui.Bootstrap.slide.cssClass = 'item'
+            ui.Bootstrap.form.cssClass = 'form-horizontal'
         }
     }
     

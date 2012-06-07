@@ -11,10 +11,10 @@
             <li><a href="${i.link ?: '#'}">&ellips;</a></li>
         </g:elseif>
         <g:elseif test="${i.active}">
-            <li class="active"><a href="${i.link}">${i.text}</a></li>
+            <li class="active"><a href="${i.link}">${i.text.encodeAsHTML()}</a></li>
         </g:elseif>
         <g:else>
-            <li><a href="${i.link}">${i.text}</a></li>
+            <li><a href="${i.link}">${i.text.encodeAsHTML()}</a></li>
         </g:else>
     </li>
     </g:each>

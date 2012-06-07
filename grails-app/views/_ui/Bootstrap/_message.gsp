@@ -1,4 +1,4 @@
-<div class="alert-message${classes} ${[info:'info', error:'error', debug:'info', warning:'warning'][type]}" data-alert="alert" ${ui.attributes()}>
-    <a class="close" href="#">×</a>
+<div class="${p.joinClasses(values:['alert','alert-block', classes, 'alert-'+[info:'info', error:'error', debug:'info', warning:'warning'][type]])}" ${ui.attributes()}>
+    <a class="close" data-dismiss="alert" href="#">×</a>
     ${bodyContent}
 </div>

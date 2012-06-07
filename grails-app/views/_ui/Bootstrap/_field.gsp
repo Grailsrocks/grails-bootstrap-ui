@@ -1,18 +1,18 @@
 <bean:inputTemplate>
 ${field}<g:if test="${errors}"><br/>${errors}</g:if>
 </bean:inputTemplate>
-<div class="${g.joinClasses(values:[invalid ? 'error' : null, classes, 'clearfix'])}">
+<div class="control-group ${p.joinClasses(values:[invalid ? 'error' : null, classes])}">
     <g:if test="${beanObject}">        
-        <bean:label beanName="dummy" bean="${beanObject}" property="${name}" />
-        <div class="input">
+        <bean:label beanName="dummy" bean="${beanObject}" property="${name}" labelClass="control-label"/>
+        <div class="controls">
             <bean:field beanName="dummy" bean="${beanObject}" property="${name}" noLabel="${true}"/>
         </div>
     </g:if>
     <g:else>
-        <label for="${name}">${label ? label.encodeAsHTML() : name.encodeAsHTML()}</label>
-        <div class="input">
-            <input class="${g.joinClasses(values:[classes, invalid ? 'error' : ''])}" type="${type}" name="${name}" value="${value}"/>
-            <span class="help-inline" class="${invalid ? 'error' : ''}" ><g:message code="field.hint.${name}" encodeAs="HTML"/></span>
+        <label for="${name}" class="control-label">${label ? label.encodeAsHTML() : name.encodeAsHTML()}</label>
+        <div class="controls">
+            <input class="${p.joinClasses(values:[classes, invalid ? 'error' : ''])}" type="${type}" name="${name}" value="${value}"/>
+            <span class="help-block" class="${invalid ? 'error' : ''}" ><g:message code="field.hint.${name}" encodeAs="HTML"/></span>
         </div>
     </g:else>
 </div>

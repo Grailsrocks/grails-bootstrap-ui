@@ -1,13 +1,14 @@
 modules = {
-    overrides {
+/*    overrides {
         'bootstrap-js' {
             dependsOn 'jquery'
         }
     }
     
+*/
     // Resources for your custom UI Set
     'ui.Bootstrap' {
-        dependsOn 'bootstrap-css', 'bootstrap-tabs'
+        dependsOn 'jquery', 'bootstrap'
         
         resource id:'styling', url:[plugin:'bootstrap-ui', dir:'css', file:'ui-styling.css']
         resource id:'hooks', url:[plugin:'bootstrap-ui', dir:'js', file:'bootstrap-hooks.js']
