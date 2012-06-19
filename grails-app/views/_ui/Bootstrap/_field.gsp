@@ -5,7 +5,12 @@ ${field}<g:if test="${errors}"><br/>${errors}</g:if>
     <g:if test="${beanObject}">        
         <bean:label beanName="dummy" bean="${beanObject}" property="${name}" labelClass="control-label"/>
         <div class="controls">
-            <bean:field beanName="dummy" bean="${beanObject}" property="${name}" noLabel="${true}"/>
+            <g:if test="${type == 'password'}">
+                <bean:field type="password" beanName="dummy" bean="${beanObject}" property="${name}" noLabel="${true}"/>
+            </g:if>
+            <g:else>
+                <bean:field beanName="dummy" bean="${beanObject}" property="${name}" noLabel="${true}"/>
+            </g:else>
         </div>
     </g:if>
     <g:else>

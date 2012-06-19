@@ -8,7 +8,7 @@
   logoClass - Class to apply to the logo element
   uiArgs
 --%>
-<g:set var="logoSizeClass" value="${logoClass+w+'x'+h}"/>
+<g:set var="logoSizeClass" value="${logoClass+(w?:'')+'x'+(h?:'')}"/>
 <g:if test="${logoUri}">
     <a href="${p.siteURL().encodeAsHTML()}"><r:img uri="${logoUri.encodeAsHTML()}" class="${p.joinClasses(values:[classes, logoClass, logoSizeClass])}" alt="${applicationName.encodeAsHTML()}" width="${w}" height="${h}"/></a>
 </g:if>
