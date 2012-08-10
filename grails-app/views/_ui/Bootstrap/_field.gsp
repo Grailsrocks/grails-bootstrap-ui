@@ -1,12 +1,12 @@
 <div class="control-group ${p.joinClasses(values:[invalid ? invalidClass : null, classes])}">
-    <div class="controls">
-        <g:if test="${customLabel}">
-            ${customLabel}
-        </g:if>
-        <g:else>
-            <label for="${name}">${label.encodeAsHTML()}</label>
-        </g:else>
+    <g:if test="${customLabel}">
+        ${customLabel}
+    </g:if>
+    <g:else>
+        <label for="${name}" class="control-label">${label.encodeAsHTML()}</label>
+    </g:else>
 
+    <div class="controls">
         <g:if test="${customInput}">
             ${customInput}
         </g:if>
@@ -19,7 +19,7 @@
         </g:if>
         <g:elseif test="${errors}">
             <g:each in="${errors}" var="err">
-                <span class="error">${err.encodeAsHTML()}</span>
+                <p class="error">${err.encodeAsHTML()}</p>
             </g:each>
         </g:elseif>
 
@@ -27,7 +27,7 @@
             ${customHint}
         </g:if>
         <g:elseif test="${hint}">
-            <span class="help-hint">${hint.encodeAsHTML()}</span>
+            <p class="help-block">${hint.encodeAsHTML()}</p>
         </g:elseif>
     </div>
 </div>

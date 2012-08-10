@@ -44,6 +44,7 @@ Twitter Bootstrap based UI Set for plugin platform
             ui.Bootstrap.tab.cssClass = 'tab-pane'
             ui.Bootstrap.tabs.cssClass = 'nav nav-tabs'
             ui.Bootstrap.field.cssClass = 'input'
+            ui.Bootstrap.input.cssClass = 'input-xlarge'
             ui.Bootstrap.invalid.cssClass = 'invalid'
             ui.Bootstrap.table.cssClass = 'table table-striped'
             ui.Bootstrap.tr.cssClass = ''
