@@ -22,5 +22,5 @@ ${field}
         </g:else>
 </g:if>
 <g:else>
-    <input class="${p.joinClasses(values:[classes, invalid ? 'error' : ''])}" type="${type}" name="${name}" value="${value}"/>
+    <input id="${id.encodeAsHTML()}" class="${p.joinClasses(values:[classes, invalid ? 'error' : ''])}" type="${type}" name="${name}" value="${value}"/>
 </g:else>
