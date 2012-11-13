@@ -31,14 +31,14 @@ grails.project.dependency.resolution = {
     plugins {
         build(":tomcat:$grailsVersion",
               ":hibernate:$grailsVersion",
-              ':release:2.0.2') {
+              ':release:2.0.3') {
             export = false
         }
 
         runtime ":jquery:1.7.1"
-        runtime ":resources:1.2-RC1"
+        runtime ":resources:1.2.RC2"
         compile ":bean-fields:1.0" 
         compile ":platform-ui:1.0.M1-SNAPSHOT" 
-        runtime ":twitter-bootstrap:2.0.2.25"
+        runtime ":twitter-bootstrap:2.1.1"
     }
 }
