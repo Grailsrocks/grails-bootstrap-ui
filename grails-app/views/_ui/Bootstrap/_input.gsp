@@ -13,12 +13,13 @@ ${field}
 <bean:textAreaTemplate>
 ${field}
 </bean:textAreaTemplate>
+<g:set var="type" value="${type ?: 'text'}"/>
 <g:if test="${beanObject}">        
         <g:if test="${type == 'password'}">
             <bean:field type="password" beanName="dummy" bean="${beanObject}" property="${name}" noLabel="${true}"/>
         </g:if>
         <g:else>
-            <bean:field beanName="dummy" bean="${beanObject}" property="${name}" noLabel="${true}"/>
+            <bean:field type="${type}" beanName="dummy" bean="${beanObject}" property="${name}" noLabel="${true}"/>
         </g:else>
 </g:if>
 <g:else>
