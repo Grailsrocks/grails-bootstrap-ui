@@ -50,9 +50,12 @@ Twitter Bootstrap based UI Set for plugin platform
             ui.Bootstrap.tr.cssClass = ''
             ui.Bootstrap.trOdd.cssClass = ''
             ui.Bootstrap.trEven.cssClass = ''
-            ui.Bootstrap.carousel.cssClass = 'carousel'
+            ui.Bootstrap.carousel.cssClass = 'carousel slide'
             ui.Bootstrap.slide.cssClass = 'item'
             ui.Bootstrap.form.cssClass = 'form-horizontal'
+            ui.Bootstrap.primaryNavigation.cssClass = 'nav'
+            ui.Bootstrap.secondaryNavigation.cssClass = 'nav nav-pills'
+            ui.Bootstrap.navigation.cssClass = 'nav'
         }
     }
     
