@@ -1,4 +1,4 @@
-<div id="${id}" class="${p.joinClasses(values:[carouselClass, classes])}">
+<div id="${id}" class="${p.joinClasses(values:[carouselClass, classes])}" ${ui.attributes()}>
     <div class="carousel-inner">
         <g:each in="${slides}" var="s">${s.bodyContent}</g:each>
     </div>
